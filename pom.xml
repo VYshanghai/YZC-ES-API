@@ -6,24 +6,27 @@
 
   <groupId>com.vy</groupId>
   <artifactId>yzc-es-api</artifactId>
+  <packaging>pom</packaging>
   <version>1.0.0-SNAPSHOT</version>
+  <name>es-tools</name>
+
+  <modules>
+    <module>es-core-api</module>
+  </modules>
 
   <properties>
+    <skipTests>true</skipTests>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- git -->
     <git-commit-id-plugin.version>2.2.1</git-commit-id-plugin.version>
     <!-- docker -->
     <docker.repository>registry-vpc.cn-beijing.aliyuncs.com</docker.repository>
     <docker.registry.name>visva</docker.registry.name>
     <docker-maven-plugin.version>1.1.1</docker-maven-plugin.version>
-    <java.version>1.8</java.version>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
-      <version>2.1.0.RELEASE</version>
-    </dependency>
-
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -32,7 +35,7 @@
   </dependencies>
 
   <!-- 依赖的仓库地址 -->
-  <repositories>
+  <!--<repositories>
     <repository>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
@@ -43,16 +46,16 @@
       <name>aliyun maven</name>
       <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
       <layout>default</layout>
-      <!-- 是否开启发布版构件下载 -->
+      &lt;!&ndash; 是否开启发布版构件下载 &ndash;&gt;
       <releases>
         <enabled>true</enabled>
       </releases>
-      <!-- 是否开启快照版构件下载 -->
+      &lt;!&ndash; 是否开启快照版构件下载 &ndash;&gt;
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
     </repository>
-  </repositories>
+  </repositories>-->
 
   <distributionManagement>
     <repository>
@@ -65,7 +68,7 @@
     </snapshotRepository>
   </distributionManagement>
 
-  <build>
+  <!--<build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -77,10 +80,10 @@
         <artifactId>git-commit-id-plugin</artifactId>
         <version>${git-commit-id-plugin.version}</version>
         <configuration>
-          <!-- human-readable part of the version number -->
+          &lt;!&ndash; human-readable part of the version number &ndash;&gt;
           <dateFormat>yyyyMMdd</dateFormat>
           <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
-          <!--somehow necessary. otherwise the variables are not available in the pom -->
+          &lt;!&ndash;somehow necessary. otherwise the variables are not available in the pom &ndash;&gt;
           <generateGitPropertiesFile>false</generateGitPropertiesFile>
         </configuration>
       </plugin>
@@ -156,5 +159,5 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  </build>
+  </build>-->
 </project>
