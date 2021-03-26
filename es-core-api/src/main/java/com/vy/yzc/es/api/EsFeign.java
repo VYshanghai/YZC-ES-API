@@ -59,7 +59,7 @@ public interface EsFeign {
 	/**
 	 * 更新deleted状态
 	 */
-	@PostMapping("/update/deleted/state")
+	@PostMapping("/update/deleted/state/{deleted}")
 	Boolean updateDeletedState(@RequestBody List<Long> offersIds, @PathVariable(required = false) Integer deleted);
 
 	/**
