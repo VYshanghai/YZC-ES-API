@@ -33,14 +33,14 @@ public interface EsFeign {
 	/**
 	 * 根据关键词分页搜索
 	 */
-	@PostMapping("/search/keyword/{userId}")
-	EsSearchVO<Long> searchKeyword(@RequestBody OffersSearchReq req, @PathVariable(required = false)Long userId);
+	@PostMapping("/search/keyword")
+	EsSearchVO<Long> searchKeyword(@RequestBody OffersSearchReq req);
 
 	/**
 	 * 根据条件过滤筛选
 	 */
-	@PostMapping("/search/filter/{userId}")
-	EsSearchVO<Long> searchFilter(@RequestBody OffersFilterReq req, @PathVariable(required = false) Long userId);
+	@PostMapping("/search/filter")
+	EsSearchVO<Long> searchFilter(@RequestBody OffersFilterReq req);
 	
 
 	/**
@@ -53,8 +53,8 @@ public interface EsFeign {
 	/**
 	 * 附近的爆料
 	 */
-	@PostMapping("/near/{userId}")
-	EsSearchVO<Long> near(@RequestBody OffersNearReq req, @PathVariable(required = false) Long userId);
+	@PostMapping("/near")
+	EsSearchVO<Long> near(@RequestBody OffersNearReq req);
 
 	/**
 	 * 更新deleted状态
