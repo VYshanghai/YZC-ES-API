@@ -1,6 +1,6 @@
 package com.vy.yzc.es.dto;
 
-import com.vy.yzc.es.service.base.BaseEsPageReq;
+import com.vy.yzc.es.eo.BaseEsPageReq;
 import java.math.BigDecimal;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;

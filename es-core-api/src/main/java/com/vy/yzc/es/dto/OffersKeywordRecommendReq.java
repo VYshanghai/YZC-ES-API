@@ -1,6 +1,6 @@
 package com.vy.yzc.es.dto;
 
-import com.vy.yzc.es.service.base.BaseEsPageReq;
+import com.vy.yzc.es.eo.BaseEsPageReq;
 import javax.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
