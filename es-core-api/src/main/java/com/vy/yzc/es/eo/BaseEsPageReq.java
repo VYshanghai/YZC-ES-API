@@ -1,4 +1,4 @@
-package com.vy.yzc.es.service.base;
+package com.vy.yzc.es.eo;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -20,6 +20,7 @@ import org.springframework.validation.annotation.Validated;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BaseEsPageReq {
+
 	@Min(1)
 	@Max(Integer.MAX_VALUE)
 	@NotNull
