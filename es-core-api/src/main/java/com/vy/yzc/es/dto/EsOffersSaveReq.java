@@ -89,4 +89,9 @@ public class EsOffersSaveReq {
 	 */
 	private Integer platform;
 
+	/**
+	 * 城市名称
+	 */
+	private String cityName;
+
 }
