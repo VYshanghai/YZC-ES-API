@@ -38,6 +38,11 @@ public class EsOffersSaveReq {
 	private Long categoryType;
 
 	/**
+	 * 当前商品属性的所有id的string，用英文逗号隔开
+	 */
+	private String categoryIdList;
+
+	/**
 	 * 分类名称
 	 */
 	private String categoryName;
