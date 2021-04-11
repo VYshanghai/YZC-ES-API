@@ -1,2 +1,10 @@
-C:\Users\lsd04\Desktop\VY\YZC\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\eo\package-info.java
-C:\Users\lsd04\Desktop\VY\YZC\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\api\EsFeign.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\eo\BaseEsPageReq.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\eo\package-info.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\OffersKeywordRecommendReq.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\EsSearchVO.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\OffersNearReq.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\OffersSearchReq.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\OffersFilterReq.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\api\EsFeign.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\EsOffersSaveReq.java
+D:\vyWorkspace\YZC-ES-API\es-core-api\src\main\java\com\vy\yzc\es\dto\OffersSearchType.java
