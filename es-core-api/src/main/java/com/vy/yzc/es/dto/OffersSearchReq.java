@@ -28,6 +28,9 @@ public class OffersSearchReq extends BaseEsPageReq {
 	@NotNull
 	private Integer type;
 
+//	@ApiModelProperty(value = "发布人类型：1用户和商家 2系统抓取")
+	private Integer infoSource;
+
 //	@ApiModelProperty(value = "纬度")
 	private BigDecimal lat;
 
