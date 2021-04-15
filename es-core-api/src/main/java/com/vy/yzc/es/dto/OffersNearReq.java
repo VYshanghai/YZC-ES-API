@@ -20,7 +20,18 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 public class OffersNearReq extends BaseEsPageReq {
 
+	/**
+	 * 店铺的坐标
+	 */
 	private BigDecimal lat;
 
 	private BigDecimal lng;
+
+
+	/**
+	 * 用户当前位置的
+	 */
+	private BigDecimal selfLat;
+
+	private BigDecimal selfLng;
 }
