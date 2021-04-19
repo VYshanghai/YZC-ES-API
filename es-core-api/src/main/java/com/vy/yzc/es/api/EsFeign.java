@@ -35,6 +35,12 @@ public interface EsFeign {
 	EsSearchVO<Long> searchKeyword(@RequestBody OffersSearchReq req);
 
 	/**
+	 * 根据关键词分页搜索——后台
+	 */
+	@PostMapping("/search/keyword/background")
+	EsSearchVO<Long> searchKeywordForBackground(@RequestBody OffersSearchReq req);
+
+	/**
 	 * 根据条件过滤筛选
 	 */
 	@PostMapping("/search/filter")

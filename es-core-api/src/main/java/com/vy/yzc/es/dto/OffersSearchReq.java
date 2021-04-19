@@ -1,5 +1,6 @@
 package com.vy.yzc.es.dto;
 
+import com.vy.yzc.es.enums.MatchFieldEnum;
 import com.vy.yzc.es.eo.BaseEsPageReq;
 import java.math.BigDecimal;
 import javax.validation.constraints.NotNull;
@@ -37,6 +38,10 @@ public class OffersSearchReq extends BaseEsPageReq {
 //	@ApiModelProperty(value = "经度")
 	private BigDecimal lng;
 
-
+	/**
+	 * 需要匹配的字段
+	 * @see MatchFieldEnum
+	 */
+	private Integer matchField;
 
 }
