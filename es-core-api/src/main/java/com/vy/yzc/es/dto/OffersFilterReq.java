@@ -35,7 +35,7 @@ public class OffersFilterReq extends BaseEsPageReq {
 	@ApiModelProperty(value = "优惠标签: 1 满减 2 折扣 3 满赠 4 低价 5 优惠套餐.")
 	private Integer couponType;
 
-	@ApiModelProperty(value = "发布人类型：1用户和商家 2系统抓取")
+	@ApiModelProperty(value = "发布人类型：1用户和商家 2京东和美团系统抓取 3享库存系统抓取")
 	private Integer infoSource;
 
 	@NotNull
