@@ -99,4 +99,19 @@ public class EsOffersSaveReq {
 	 */
 	private String cityName;
 
+	/**
+	 * 区
+	 */
+	private String district;
+
+	/**
+	 * 价格
+	 */
+	private Integer price;
+
+	/**
+	 * 折扣减去的价格 = 原价 - 现价
+	 */
+	private Integer discountPrice;
+
 }

@@ -9,8 +9,8 @@ import java.util.Objects;
  */
 public enum OffersSearchType {
 	ALL(0,"所有"),
-	OFFLINE(1,"线下"),
-	ONLINE(2,"线上"),
+	OFFLINE(1,"线上"),
+	ONLINE(2,"线下"),
 	;
 
 	int code;
