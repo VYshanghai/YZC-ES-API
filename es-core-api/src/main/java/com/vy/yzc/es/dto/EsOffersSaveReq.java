@@ -100,9 +100,9 @@ public class EsOffersSaveReq {
 	private String cityName;
 
 	/**
-	 * 区
+	 * 商圈id，用英文逗号隔开
 	 */
-	private String district;
+	private String regionIdList;
 
 	/**
 	 * 价格
