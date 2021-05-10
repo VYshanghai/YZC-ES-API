@@ -5,8 +5,11 @@ import com.vy.yzc.es.dto.EsSearchVO;
 import com.vy.yzc.es.dto.OffersFilterReq;
 import com.vy.yzc.es.dto.OffersKeywordRecommendReq;
 import com.vy.yzc.es.dto.OffersNearReq;
+import com.vy.yzc.es.dto.OffersOfflineSearchReq;
+import com.vy.yzc.es.dto.OffersOnlineSearchReq;
 import com.vy.yzc.es.dto.OffersSearchReq;
 import java.util.List;
+import javax.validation.Valid;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -71,5 +74,23 @@ public interface EsFeign {
 	 */
 	@PostMapping("/save/reqs")
 	Boolean saveReqs(@RequestBody List<EsOffersSaveReq> reqs);
+
+	/**
+	 * since version 1.1
+	 * search offline offers (xkc, mt)
+	 * @param req
+	 * @return
+	 */
+	@PostMapping("/search/offline")
+	EsSearchVO<Long> searchOffline(@Valid @RequestBody OffersOfflineSearchReq req);
+
+	/**
+	 * since version 1.1
+	 * search online offers(pdd, jd, wph)
+	 * @param req
+	 * @return
+	 */
+	@PostMapping("/search/online")
+	EsSearchVO<Long> searchOnline(@Valid @RequestBody OffersOnlineSearchReq req);
 
 }
