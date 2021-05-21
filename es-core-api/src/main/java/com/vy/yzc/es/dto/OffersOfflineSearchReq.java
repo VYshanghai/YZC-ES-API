@@ -51,7 +51,7 @@ public class OffersOfflineSearchReq extends BaseEsPageReq {
 	private Integer highPrice;
 
 	@ApiModelProperty(value = "排序类型，1按照距离 2优惠最大")
-	private Integer sortType;
+	private Integer sortType = 1;
 
 	@ApiModelProperty(value = "前端不传，不需要处理")
 	private Integer platform;

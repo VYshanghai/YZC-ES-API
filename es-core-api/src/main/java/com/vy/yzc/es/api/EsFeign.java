@@ -93,4 +93,10 @@ public interface EsFeign {
 	@PostMapping("/search/online")
 	EsSearchVO<Long> searchOnline(@Valid @RequestBody OffersOnlineSearchReq req);
 
+	/**
+	 * 批量update nonnull字段
+	 */
+	@PostMapping("/update/reqs")
+	Boolean updateNonNullValue(@RequestBody List<EsOffersSaveReq> reqs);
+
 }
